@@ -1,0 +1,16 @@
+[24-Mar-2023 06:52:27 America/New_York] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/korehtzw/public_html/Modules/Certificate/Providers/CertificateServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/Certificate/Providers/CertificateServiceProvider.php on line 8
+[24-Mar-2023 06:52:29 America/New_York] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Support\Providers\RouteServiceProvider" not found in /home/korehtzw/public_html/Modules/Certificate/Providers/RouteServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/Certificate/Providers/RouteServiceProvider.php on line 8
+[24-Mar-2023 07:04:50 America/New_York] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/korehtzw/public_html/Modules/Certificate/Providers/CertificateServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/Certificate/Providers/CertificateServiceProvider.php on line 8
+[24-Mar-2023 07:04:52 America/New_York] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Support\Providers\RouteServiceProvider" not found in /home/korehtzw/public_html/Modules/Certificate/Providers/RouteServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/Certificate/Providers/RouteServiceProvider.php on line 8

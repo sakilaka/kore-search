@@ -1,0 +1,4 @@
+[26-Mar-2023 03:39:59 America/New_York] PHP Fatal error:  Uncaught Error: Class "Illuminate\Routing\Controller" not found in /home/korehtzw/public_html/Modules/Smanager/Http/Controllers/SmanagerController.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/Smanager/Http/Controllers/SmanagerController.php on line 16

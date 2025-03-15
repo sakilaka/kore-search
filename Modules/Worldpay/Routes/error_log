@@ -1,0 +1,8 @@
+[24-Mar-2023 07:09:20 America/New_York] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/korehtzw/public_html/Modules/Worldpay/Routes/web.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/Worldpay/Routes/web.php on line 18
+[24-Mar-2023 07:16:25 America/New_York] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/korehtzw/public_html/Modules/Worldpay/Routes/web.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/Worldpay/Routes/web.php on line 18

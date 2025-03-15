@@ -1,0 +1,8 @@
+[24-Mar-2023 06:52:21 America/New_York] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/korehtzw/public_html/Modules/Certificate/Models/CertificateDesign.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/Certificate/Models/CertificateDesign.php on line 8
+[24-Mar-2023 07:04:44 America/New_York] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/korehtzw/public_html/Modules/Certificate/Models/CertificateDesign.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/Certificate/Models/CertificateDesign.php on line 8

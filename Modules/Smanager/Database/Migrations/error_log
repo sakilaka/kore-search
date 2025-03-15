@@ -1,0 +1,4 @@
+[26-Mar-2023 03:39:25 America/New_York] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/korehtzw/public_html/Modules/Smanager/Database/Migrations/2021_07_26_131923_add_column_smanager_settings.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/Smanager/Database/Migrations/2021_07_26_131923_add_column_smanager_settings.php on line 7

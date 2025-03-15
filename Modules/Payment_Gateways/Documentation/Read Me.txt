@@ -1,0 +1,7 @@
+For documenation please open following URL
+
+https://thenextlinestudio.gitbook.io/eclass-mpesa-add-on/
+
+
+For Devloper Guide please open following URL
+https://thenextlinestudio.gitbook.io/eclass-mpesa-add-on/developer-guide/mpesa-developer-guide

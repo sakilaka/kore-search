@@ -1,0 +1,16 @@
+[24-Mar-2023 06:52:41 America/New_York] PHP Fatal error:  Uncaught Error: Class "Route" not found in /home/korehtzw/public_html/Modules/Certificate/Routes/api.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/Certificate/Routes/api.php on line 16
+[24-Mar-2023 06:52:42 America/New_York] PHP Fatal error:  Uncaught Error: Class "Route" not found in /home/korehtzw/public_html/Modules/Certificate/Routes/web.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/Certificate/Routes/web.php on line 14
+[24-Mar-2023 07:05:04 America/New_York] PHP Fatal error:  Uncaught Error: Class "Route" not found in /home/korehtzw/public_html/Modules/Certificate/Routes/api.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/Certificate/Routes/api.php on line 16
+[24-Mar-2023 07:05:07 America/New_York] PHP Fatal error:  Uncaught Error: Class "Route" not found in /home/korehtzw/public_html/Modules/Certificate/Routes/web.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/Certificate/Routes/web.php on line 14

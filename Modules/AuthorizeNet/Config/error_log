@@ -1,0 +1,8 @@
+[24-Mar-2023 04:07:23 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/korehtzw/public_html/Modules/AuthorizeNet/Config/config.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/AuthorizeNet/Config/config.php on line 5
+[24-Mar-2023 07:04:20 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/korehtzw/public_html/Modules/AuthorizeNet/Config/config.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/AuthorizeNet/Config/config.php on line 5

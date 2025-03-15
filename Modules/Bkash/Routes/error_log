@@ -1,0 +1,4 @@
+[26-Mar-2023 03:35:45 America/New_York] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/korehtzw/public_html/Modules/Bkash/Routes/web.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/Bkash/Routes/web.php on line 6

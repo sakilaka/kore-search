@@ -1,0 +1,4 @@
+[26-Mar-2023 05:36:14 America/New_York] PHP Fatal error:  Uncaught Error: Class "Illuminate\Routing\Controller" not found in /home/korehtzw/public_html/Modules/AuthorizeNet/Http/Controllers/AuthorizeNetController.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/AuthorizeNet/Http/Controllers/AuthorizeNetController.php on line 14

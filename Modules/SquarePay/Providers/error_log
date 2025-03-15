@@ -1,0 +1,16 @@
+[24-Mar-2023 06:12:21 America/New_York] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Support\Providers\RouteServiceProvider" not found in /home/korehtzw/public_html/Modules/SquarePay/Providers/RouteServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/SquarePay/Providers/RouteServiceProvider.php on line 8
+[24-Mar-2023 06:12:24 America/New_York] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/korehtzw/public_html/Modules/SquarePay/Providers/SquarePayServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/SquarePay/Providers/SquarePayServiceProvider.php on line 8
+[24-Mar-2023 07:08:30 America/New_York] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Support\Providers\RouteServiceProvider" not found in /home/korehtzw/public_html/Modules/SquarePay/Providers/RouteServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/SquarePay/Providers/RouteServiceProvider.php on line 8
+[24-Mar-2023 07:08:32 America/New_York] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/korehtzw/public_html/Modules/SquarePay/Providers/SquarePayServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/SquarePay/Providers/SquarePayServiceProvider.php on line 8

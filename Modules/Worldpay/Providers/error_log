@@ -1,0 +1,16 @@
+[24-Mar-2023 06:18:13 America/New_York] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Support\Providers\RouteServiceProvider" not found in /home/korehtzw/public_html/Modules/Worldpay/Providers/RouteServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/Worldpay/Providers/RouteServiceProvider.php on line 8
+[24-Mar-2023 06:18:17 America/New_York] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/korehtzw/public_html/Modules/Worldpay/Providers/WorldpayServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/Worldpay/Providers/WorldpayServiceProvider.php on line 8
+[24-Mar-2023 07:09:07 America/New_York] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Support\Providers\RouteServiceProvider" not found in /home/korehtzw/public_html/Modules/Worldpay/Providers/RouteServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/Worldpay/Providers/RouteServiceProvider.php on line 8
+[24-Mar-2023 07:09:08 America/New_York] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/korehtzw/public_html/Modules/Worldpay/Providers/WorldpayServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/Worldpay/Providers/WorldpayServiceProvider.php on line 8

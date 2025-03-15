@@ -1,0 +1,16 @@
+[24-Mar-2023 07:07:45 America/New_York] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Support\Providers\RouteServiceProvider" not found in /home/korehtzw/public_html/Modules/Smanager/Providers/RouteServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/Smanager/Providers/RouteServiceProvider.php on line 8
+[24-Mar-2023 07:07:47 America/New_York] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/korehtzw/public_html/Modules/Smanager/Providers/SmanagerServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/Smanager/Providers/SmanagerServiceProvider.php on line 8
+[24-Mar-2023 11:38:17 America/New_York] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Support\Providers\RouteServiceProvider" not found in /home/korehtzw/public_html/Modules/Smanager/Providers/RouteServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/Smanager/Providers/RouteServiceProvider.php on line 8
+[24-Mar-2023 11:38:19 America/New_York] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/korehtzw/public_html/Modules/Smanager/Providers/SmanagerServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/Smanager/Providers/SmanagerServiceProvider.php on line 8

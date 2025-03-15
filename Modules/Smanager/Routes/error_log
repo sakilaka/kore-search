@@ -1,0 +1,16 @@
+[24-Mar-2023 07:07:59 America/New_York] PHP Fatal error:  Uncaught Error: Class "Route" not found in /home/korehtzw/public_html/Modules/Smanager/Routes/api.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/Smanager/Routes/api.php on line 16
+[24-Mar-2023 07:08:00 America/New_York] PHP Fatal error:  Uncaught Error: Class "Route" not found in /home/korehtzw/public_html/Modules/Smanager/Routes/web.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/Smanager/Routes/web.php on line 14
+[25-Mar-2023 01:49:53 America/New_York] PHP Fatal error:  Uncaught Error: Class "Route" not found in /home/korehtzw/public_html/Modules/Smanager/Routes/api.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/Smanager/Routes/api.php on line 16
+[25-Mar-2023 01:50:05 America/New_York] PHP Fatal error:  Uncaught Error: Class "Route" not found in /home/korehtzw/public_html/Modules/Smanager/Routes/web.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/Smanager/Routes/web.php on line 14

@@ -1,0 +1,4 @@
+[26-Mar-2023 03:38:13 America/New_York] PHP Fatal error:  Uncaught Error: Class "Illuminate\Routing\Controller" not found in /home/korehtzw/public_html/Modules/Paytab/Http/Controllers/PaytabController.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/Paytab/Http/Controllers/PaytabController.php on line 17

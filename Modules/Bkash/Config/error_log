@@ -1,0 +1,4 @@
+[25-Mar-2023 04:21:16 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/korehtzw/public_html/Modules/Bkash/Config/config.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/Bkash/Config/config.php on line 9

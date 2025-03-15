@@ -1,0 +1,16 @@
+[24-Mar-2023 06:53:14 America/New_York] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/korehtzw/public_html/Modules/Googleclassroom/Providers/GoogleclassroomServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/Googleclassroom/Providers/GoogleclassroomServiceProvider.php on line 8
+[24-Mar-2023 06:53:16 America/New_York] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Support\Providers\RouteServiceProvider" not found in /home/korehtzw/public_html/Modules/Googleclassroom/Providers/RouteServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/Googleclassroom/Providers/RouteServiceProvider.php on line 8
+[24-Mar-2023 07:05:45 America/New_York] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/korehtzw/public_html/Modules/Googleclassroom/Providers/GoogleclassroomServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/Googleclassroom/Providers/GoogleclassroomServiceProvider.php on line 8
+[24-Mar-2023 07:05:47 America/New_York] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Support\Providers\RouteServiceProvider" not found in /home/korehtzw/public_html/Modules/Googleclassroom/Providers/RouteServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/Googleclassroom/Providers/RouteServiceProvider.php on line 8

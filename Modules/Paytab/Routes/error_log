@@ -1,0 +1,8 @@
+[24-Mar-2023 07:07:17 America/New_York] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/korehtzw/public_html/Modules/Paytab/Routes/web.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/Paytab/Routes/web.php on line 17
+[25-Mar-2023 01:42:05 America/New_York] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/korehtzw/public_html/Modules/Paytab/Routes/web.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/Paytab/Routes/web.php on line 17

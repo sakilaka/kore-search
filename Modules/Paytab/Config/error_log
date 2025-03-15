@@ -1,0 +1,8 @@
+[24-Mar-2023 07:06:51 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/korehtzw/public_html/Modules/Paytab/Config/config.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/Paytab/Config/config.php on line 5
+[25-Mar-2023 02:10:35 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/korehtzw/public_html/Modules/Paytab/Config/config.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/Paytab/Config/config.php on line 5

@@ -1,0 +1,4 @@
+[24-Mar-2023 06:52:03 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function __() in /home/korehtzw/public_html/Modules/Certificate/Config/config.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/korehtzw/public_html/Modules/Certificate/Config/config.php on line 4

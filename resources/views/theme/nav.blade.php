@@ -315,7 +315,7 @@
         
         <!-- end navigation -->
         <div class="row smallscreen-search-block">
-            <div class="col-lg-5">
+            <div class="col-lg-10">
                 <div class="row">
                     <div class="col-lg-5 col-md-4 col-sm-12">
                         <div class="logo">
@@ -326,101 +326,93 @@
                             @endif
                         </div>
                     </div>
+
                     <div class="col-lg-7 col-md-4 col-sm-12">
                         <div class="navigation pt-1">
                             <div id="cssmenu">
-                                <ul>
-                                    <li class="mr-4"><a href="#" title="Categories"><i data-feather="grid"></i>{{ __('Courses') }}</a>
-                                       
+                                <ul class="nav-ul">
+                                    <!-- Home -->
+                                    <li><a href="{{ route('home') }}">Home</a></li>
+
+                                    <!-- Courses Dropdown -->
+                                    <li class="">
+                                        <a href="#" title="Categories">
+                                             {{ __('All Courses') }} <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                        </a>
                                         <ul>
                                             @foreach($categories as $cate)
-                                            @if($cate->status == 1 )
-                                            <li><a href="{{ route('category.page',['id' => $cate->id, 'category' => $cate->title]) }}" title="{{ $cate->title }}"><i class="fa {{ $cate->icon }} rgt-20"></i>{{ str_limit($cate->title, $limit = 25, $end = '..') }} <i data-feather="chevron-right" class="float-right"></i></a>
-                                            <ul>   
-                                                 @foreach($cate->subcategory as $sub)
-                                                @if($sub->status ==1)
-                                                <li><a href="{{ route('subcategory.page',['id' => $sub->id, 'category' => $sub->title]) }}" title="{{ $sub->title }}"><i class="fa {{ $sub->icon }} rgt-20"></i>{{ str_limit($sub->title, $limit = 25, $end = '..') }}
-                                                    <i data-feather="chevron-right" class="float-right"></i></a>
-                                                    <ul>
-                                                        @foreach($sub->childcategory as $child)
-                                                        @if($child->status ==1)
-                                                        <li>
-                                                            <a href="{{ route('childcategory.page',['id' => $child->id, 'category' => $child->title]) }}" title="{{ $child->title }}"><i class="fa {{ $child->icon }} rgt-20"></i>{{ str_limit($child->title, $limit = 25, $end = '..') }}</a>
-                                                        </li>
-                                                        @endif
-                                                        @endforeach
-                                                    </ul>
-                                                </li>
-                                                @endif
-                                               @endforeach
-                                            </ul>
+                                            @if($cate->status == 1)
+                                            <li>
+                                                <a href="{{ route('category.page', ['id' => $cate->id, 'category' => $cate->title]) }}" title="{{ $cate->title }}">
+                                                    <i class="fa {{ $cate->icon }} rgt-20"></i>
+                                                    {{ str_limit($cate->title, $limit = 25, $end = '..') }}
+                                                    <i data-feather="chevron-right" class="float-right"></i>
+                                                </a>
+                                                <ul>
+                                                    @foreach($cate->subcategory as $sub)
+                                                    @if($sub->status == 1)
+                                                    <li>
+                                                        <a href="{{ route('subcategory.page', ['id' => $sub->id, 'category' => $sub->title]) }}" title="{{ $sub->title }}">
+                                                            <i class="fa {{ $sub->icon }} rgt-20"></i>
+                                                            {{ str_limit($sub->title, $limit = 25, $end = '..') }}
+                                                            <i data-feather="chevron-right" class="float-right"></i>
+                                                        </a>
+                                                        <ul>
+                                                            @foreach($sub->childcategory as $child)
+                                                            @if($child->status == 1)
+                                                            <li>
+                                                                <a href="{{ route('childcategory.page', ['id' => $child->id, 'category' => $child->title]) }}" title="{{ $child->title }}">
+                                                                    <i class="fa {{ $child->icon }} rgt-20"></i>
+                                                                    {{ str_limit($child->title, $limit = 25, $end = '..') }}
+                                                                </a>
+                                                            </li>
+                                                            @endif
+                                                            @endforeach
+                                                        </ul>
+                                                    </li>
+                                                    @endif
+                                                    @endforeach
+                                                </ul>
                                             </li>
                                             @endif
                                             @endforeach
                                         </ul>
                                     </li>
+
+                                    <!-- About Us -->
+                                    <li><a href="#">About Us</a></li>
+
+                                    <!-- Contact -->
+                                    <li><a href="#">Contact</a></li>
+
+                                    <li><button class="hot_btn">Hot deal</button></li>
+
+                                    <li><button class="find_btn">Find job</button></li>
                                     
-                                    @if(Module::has('Ebook') && Module::find('Ebook')->isEnabled())
-                                    @include('ebook::sidebar.nav')
-                                @endif                              
-                              </ul>
+                                </ul>
                             </div>
                         </div>
                     </div>
+
                     
                 </div>
             </div>
-            <div class="col-lg-7">
+            <div class="col-lg-2">
                 @guest
                 <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="learning-business">
-                            
-                        </div>
-                    </div>
-                    <!-- <div class="col-lg-1">
-                        <div class="shopping-cart">
-                            <a href="{{ route('cart.show') }}" title="Cart"><i data-feather="shopping-cart"></i></a>
-                            <span class="red-menu-badge red-bg-success">
-                                @php
-                                    $item = session()->get('cart.add_to_cart');
-                                    
-                                    if(isset($item) && count($item)>0){
-
-                                        echo count(array_unique($item));
-                                    }
-                                    else{
-
-                                        echo "0";
-                                    }
-                                @endphp
-                            </span>
-                        </div>
-                    </div> -->
-                    <div class="col-lg-1">
-                        <div class="search search-one" id="search">
-                            <form method="GET" id="searchform" action="{{ route('search') }}">
-                              <div class="search-input-wrap">
-                                <input class="search-input" name="searchTerm" placeholder="Search in Site" type="text" id="course_name" autocomplete="off" />
-                              </div>
-                              <input class="search-submit" type="submit" id="go" value="">
-                              <div class="icon"><i data-feather="search"></i></div>
-                              <div id="course_data"></div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
+                    <div class="col-lg-12">
                         <div class="Login-btn">
                             <a href="{{ route('login') }}" class="btn btn-secondary" title="login">{{ __('Login') }}</a>
                             <a href="{{ route('register') }}" class="btn btn-primary" title="register">{{ __('Signup') }}</a>
-                            <a href="{{ route('company_register') }}" class="btn btn-secondary" title="Company">{{ __('For Company') }}</a>
+                            {{-- <a href="{{ route('company_register') }}" class="btn btn-secondary" title="Company">{{ __('Company') }}</a> --}}
+                            <i style="margin-left: 5px; font-size: 15px;" class="fas fa-cart-plus"></i>
+
                         </div> 
                     </div>
                 @endguest
 
                 @auth
                 <div class="row">
-                    
                     
                     <div class="col-lg-5 col-md-3 col-6">
                         <div class="learning-business learning-business-two">

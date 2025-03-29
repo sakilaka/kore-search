@@ -240,13 +240,12 @@
                                 </ul>
                             </li>
                             
-                            <li class="{{ Nav::isResource('category') }} {{ Nav::isResource('subcategory') }} {{ Nav::isResource('childcategory') }} {{ Nav::isResource('course') }} {{ Nav::isResource('bundle') }} {{ Nav::isResource('courselang') }} {{ Nav::isResource('coursereview') }} {{ Nav::isRoute('assignment.view') }} {{ Nav::isResource('refundpolicy') }} {{ Nav::isResource('batch') }} {{ Nav::isRoute('quiz.review') }} {{ Nav::isResource('private-course') }} {{ Nav::isResource('admin/report/view') }} {{ Nav::isResource('user/question/report') }}">
+                            {{-- <li class="{{ Nav::isResource('category') }} {{ Nav::isResource('subcategory') }} {{ Nav::isResource('childcategory') }} {{ Nav::isResource('course') }} {{ Nav::isResource('bundle') }} {{ Nav::isResource('courselang') }} {{ Nav::isResource('coursereview') }} {{ Nav::isRoute('assignment.view') }} {{ Nav::isResource('refundpolicy') }} {{ Nav::isResource('batch') }} {{ Nav::isRoute('quiz.review') }} {{ Nav::isResource('private-course') }} {{ Nav::isResource('admin/report/view') }} {{ Nav::isResource('user/question/report') }}">
                                 <a href="javaScript:void();" class="menu"><i class="feather icon-book text-secondary"></i>
                                     <span>{{ __('Jobs') }}<div class="sub-menu truncate">New Job, Created Job</div></span>
                                     <i class="feather icon-chevron-right"></i>
                                 </a>
                                 <ul class="vertical-submenu">
-                                    <!-- Category start  -->
                                     @canany(['categories.view','subcategories.view','childcategories.views'])
                                     <li
                                         class="{{ Nav::isResource('category') }} {{ Nav::isResource('subcategory') }} {{ Nav::isResource('childcategory') }}">
@@ -257,7 +256,6 @@
                                     @endcanany
 
 
-                                    <!-- Category end  -->
                                     @can(['courses.view'])
                                     <li class="{{ Nav::isResource('course') }}"><a
                                             href="{{url('jobs/all')}}"><span>{{ __('All Job') }}</span></a>
@@ -265,7 +263,36 @@
                                     @endcan
                                     
                                 </ul>
+                            </li> --}}
+
+                            {{-- company job  --}}
+
+                            <li class="{{ Nav::isResource('category') }} {{ Nav::isResource('subcategory') }} {{ Nav::isResource('childcategory') }} {{ Nav::isResource('course') }} {{ Nav::isResource('bundle') }} {{ Nav::isResource('courselang') }} {{ Nav::isResource('coursereview') }} {{ Nav::isRoute('assignment.view') }} {{ Nav::isResource('refundpolicy') }} {{ Nav::isResource('batch') }} {{ Nav::isRoute('quiz.review') }} {{ Nav::isResource('private-course') }} {{ Nav::isResource('admin/report/view') }} {{ Nav::isResource('user/question/report') }}">
+                                <a href="javaScript:void();" class="menu"><i class="feather icon-book text-secondary"></i>
+                                    <span>{{ __('Company Jobs') }}<div class="sub-menu truncate">New Job, Created Job</div></span>
+                                    <i class="feather icon-chevron-right"></i>
+                                </a>
+                                <ul class="vertical-submenu">
+                                    {{-- <li
+                                        class="{{ Nav::isResource('category') }} {{ Nav::isResource('subcategory') }} {{ Nav::isResource('childcategory') }}">
+                                        <a href="{{ url('jobs/create') }}"><span>{{ __('New Job') }}</span><i
+                                                class="feather icon-chevron-right"></i>
+                                        </a>
+                                    </li> --}}
+
+                                    <li class="{{ Nav::isResource('course') }}"><a
+                                            href="{{ route('company.allJob') }}"><span>{{ __('All Job') }}</span></a>
+                                    </li>
+                                    <li class="{{ Nav::isResource('course') }}"><a
+                                            href="{{ route('company.pendingJob') }}"><span>{{ __('Pending Job') }}</span></a>
+                                    </li>
+                                    <li class="{{ Nav::isResource('course') }}"><a
+                                            href="{{ route('company.activeJob') }}"><span>{{ __('Active Job') }}</span></a>
+                                    </li>
+                                    
+                                </ul>
                             </li>
+
                             @endcanany
                             <li>
                                 <a href="{{url('instructor/course')}}" class="menu text-truncate" title="Modified Courses Review"><i class="feather icon-check-circle text-secondary"></i>

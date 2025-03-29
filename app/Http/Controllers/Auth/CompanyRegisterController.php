@@ -53,10 +53,11 @@ class CompanyRegisterController extends Controller
             'industry' => $request->industry,
             'email' => $request->email,
             'mobile' => $request->mobile,
+            'role' => 'company',
             'password' => Hash::make($request->password),
         ]);
 
-        // Send welcome email
+
         // Mail::to($user->email)->send(new WelcomeUser($user));
 
         return redirect()->route('company_login')->with('success', 'Registration successful! Please login.');
@@ -64,32 +65,41 @@ class CompanyRegisterController extends Controller
 
     public function companyLoginStore(Request $request)
     {
-        // Validate the request data
+        
         $validator = Validator::make($request->all(), [
             'email' => 'required|string|email',
             'password' => 'required|string',
         ]);
-
-        // If validation fails, redirect back with errors
+        
         if ($validator->fails()) {
             return redirect()->back()
                 ->withErrors($validator)
                 ->withInput();
         }
-
-        // Attempt to authenticate the user
+        
         $credentials = $request->only('email', 'password');
         $remember = $request->has('remember');
 
         if (Auth::attempt($credentials, $remember)) {
-            // Authentication passed
-            $request->session()->regenerate(); // Regenerate session for security
+            
+            $request->session()->regenerate(); 
 
-            // Redirect to the intended page or dashboard
-            return redirect()->intended('/company-dashboard')->with('success', 'Login successful!');
+            
+            $user = Auth::user();
+
+            if ($user->role == 'company') {
+                return redirect()->intended('/company-dashboard')->with('success', 'Login successful!');
+            } else {
+                Auth::logout();
+                $request->session()->invalidate();
+                $request->session()->regenerateToken();
+
+                return redirect()->route('company_login')
+                    ->withInput($request->only('email', 'remember'))
+                    ->withErrors(['email' => 'You do not have permission to access this area.']);
+            }
         }
-
-        // Authentication failed
+   
         return redirect()->back()
             ->withInput($request->only('email', 'remember'))
             ->withErrors(['email' => 'These credentials do not match our records.']);

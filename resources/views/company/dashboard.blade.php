@@ -1,5 +1,5 @@
 @extends('admin.layouts.master')
-@section('title', 'Company Dashboard - Admin')
+@section('title', 'Company Dashboard - Company')
 @section('maincontent')
 <?php
 $data['heading'] = 'Company Dashboard';

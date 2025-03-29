@@ -22,6 +22,7 @@ $rtl = array('ar','he','ur', 'arc', 'az', 'dv', 'ku', 'fa'); //make a list of rt
 <!-- head -->
 <head>
 @include('theme.head')
+
 </head>
 @if($gsetting->cookie_enable == '1')
 @include('cookieConsent::index')

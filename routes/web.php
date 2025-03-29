@@ -3,6 +3,7 @@
 use App\FaqStudent;
 use App\FaqInstructor;
 use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\company\JobController;
 use App\User;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Auth;
@@ -33,8 +34,27 @@ Route::post('logout', 'Auth\CompanyRegisterController@logout')->name('logout');
 Route::middleware('auth')->group(function () {
     Route::get('/company-dashboard', function () {
         return view('company.dashboard');
-    })->name('dashboard');
+    })->name('company_dashboard');
 });
+
+Route::prefix('company')->group(function () {
+    Route::get('/job-index', [JobController::class, 'index'])->name('company.job.index');
+    Route::get('/job-create', [JobController::class, 'create'])->name('company.job.create');
+    Route::post('/job-store', [JobController::class, 'store'])->name('company.job.store');
+    Route::get('/job-edit/{id}', [JobController::class, 'edit'])->name('company.job.edit');
+    Route::put('/job-update/{id}', [JobController::class, 'update'])->name('company.job.update');
+    Route::delete('/job-delete/{id}', [JobController::class, 'delete'])->name('company.job.delete');
+});
+
+Route::get('/all-job', [JobController::class, 'allJob'])->name('company.allJob');
+Route::get('/pending-job', [JobController::class, 'pendingJob'])->name('company.pendingJob');
+Route::get('/active-job', [JobController::class, 'activeJob'])->name('company.activeJob');
+Route::post('/update-status', [JobController::class, 'updateStatus'])->name('update.status');
+Route::post('/status/activate/{id}', [JobController::class, 'activate'])->name('status.activate');
+Route::post('/status/deactivate/{id}', [JobController::class, 'deactivate'])->name('status.deactivate');
+
+// Route::get('/about')
+
 
 
 Route::get('/currency/position', function () {
@@ -75,6 +95,7 @@ Route::get('/clear-cache', function () {
 
     return back();
 });
+
 Route::middleware(['web'])->group(function () {
     Route::post('guest/login', 'GuestController@guestlogin')->name('guest.login');
     Route::view('/accessdenied', 'accessdenied')->name('inactive');

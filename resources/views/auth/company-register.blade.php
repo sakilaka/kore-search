@@ -158,7 +158,7 @@
                                 <button type="submit" title="Sign Up" class="btn btn-primary">{{ __('Signup') }}</button> 
                                 
                             </form>
-                            
+
                             <div class="social-link btm-10">
                                 <h2><span>Or Sign Up Using</span></h2>
                                 <div class="row">
@@ -207,7 +207,7 @@
                                     @endif
                                 </div>  
                             </div>
-                            <div class="sign-up text-center">{{ __('Alreadyhaveanaccount') }}?<a href="{{ route('login') }}" title="sign-up"> {{ __('Login') }}</a>
+                            <div class="sign-up text-center">{{ __('Alreadyhaveanaccount') }}?<a href="{{ route('company_login') }}" title="sign-up"> {{ __('Login') }}</a>
                             </div>
                         </div>
                     </div>

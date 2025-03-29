@@ -120,7 +120,7 @@
                             </div>
 
                                 
-                            <div class="sign-up text-center">{{ __('Do not have an account') }}?<a href="{{ route('register') }}" title="sign-up"> {{ __('Signup') }}</a>
+                            <div class="sign-up text-center">{{ __('Do not have an account') }}?<a href="{{ route('company_register') }}" title="sign-up"> {{ __('Signup') }}</a>
                             </div>
                             <hr>
                             <div class="signin-link text-center">

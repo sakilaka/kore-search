@@ -151,6 +151,7 @@
                             </li>
                             {{-- @endcanany --}}
                             <!-- user end -->
+                            
                             @canany(['categories.view','courses.view','bundle-courses.view','course-languages.view','course-reviews.view','assignment.view','refund-policy.view','batch.view','quiz-review.view','private-course.view','reported-course.view','reported-question.view'])
 
                             <li class="header">{{ __('Education') }}</li>

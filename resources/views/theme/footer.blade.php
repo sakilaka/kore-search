@@ -1,24 +1,5 @@
 <footer id="footer" class="footer-main-block">
-    @if($hsetting->newsletter_enable == 1)
-    <section id="newsletter" class="newsletter-main-block">
-        <div class="container-xl">
-            <div class="newsletter-block">
-                <div class="row">
-                    <div class="col-lg-6 col-md-5">
-                        <h2 class="newsletter-heading">{{ __('Subscribe for our latest update') }}</h2>
-                    </div>
-                    <div class="col-lg-6 col-md-7">
-                        <form method="post" action="{{url('store-newsletter')}}">
-                            @csrf
-                            <input type="email" required placeholder="Enter your email address" name=subscribed_email>
-                        <button type="submit" class="btn btn-primary">{{ __('Subscribe') }}</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    @endif
+
     <div class="container-xl">
         <div class="footer-block">
             <div class="row">
@@ -97,6 +78,7 @@
                         </ul>
                     </div>
                 </div>
+
                 <div class="col-lg-3 col-md-3 col-4">
                     <div class="widget"><b>{{ $widgets->widget_two }}</b></div>
                     <div class="footer-link">
@@ -136,6 +118,7 @@
                         </ul>
                     </div>
                 </div>
+
                 <div class="col-lg-3 col-md-3 col-4">
                     <div class="widget"><b>{{ $widgets->widget_three }}</b></div>
                     <div class="footer-link">
@@ -185,63 +168,61 @@
                     </div>
                 </div>
 
-                @endif
 
-                <div class="col-lg-2 col-md-2">
+                <div class="col-lg-3 col-md-3 col-4">
+                    <div class="widget"><b>Subscribe for our latest update</b></div>
+                    <p class="mt-4" style="font-size: 13px;">Leave your email to get all service & news which benefit you most</p>
 
-                    @php
-                        $languages = App\Language::get(); 
-                    @endphp
-                    @if(isset($languages) && count($languages) > 0)
-                    <div class="footer-dropdown">
-                        <a href="#" class="a" data-toggle="dropdown"><i data-feather="globe"></i>{{Session::has('changed_language') ? ucfirst(Session::get('changed_language')) : ''}}<i class="fa fa-angle-up lft-10"></i></a>
-                        
-                       
-                        <ul class="dropdown-menu">
-                          
-                            @foreach($languages as $language)
-                            <a href="{{ route('languageSwitch', $language->local) }}"><li>{{$language->name}}</li></a>
-                            @endforeach
-                        </ul>
+                    <div class="d-flex mt-4">
+                        <input class="sub-email" type="email" placeholder="Enter email">
+                        <button class="sub_btn">Subscribe</button>
                     </div>
-                    @endif
 
-                    @php
-                        $currencies = DB::table('currencies')->get(); 
-                    @endphp
-                    @if(isset($currencies) && count($currencies) > 0)
-                    <div class="footer-dropdown footer-dropdown-two">
-                        <a href="#" class="a" data-toggle="dropdown"><i class="icon-wallet icons mr-2"></i> {{Session::has('changed_currency') ? ucfirst(Session::get('changed_currency')) : $currency->code}}<i class="fa fa-angle-up lft-10"></i></a>
-                        
-                       
-                        <ul class="dropdown-menu">
-                          
-                            @foreach($currencies as $currency)
-                            <a href="{{ route('CurrencySwitch', $currency->code) }}"><li>{{$currency->code}}</li></a>
-                            @endforeach
-                        </ul>
+                    <div class="d-flex gap-4 mt-5 social">
+                        <i style="font-size: 20px;" class="text-white fab fa-facebook"></i>
+                        <i style="font-size: 20px; margin-left: 20px" class="text-white fab fa-instagram"></i>
+                        <i style="font-size: 20px; margin-left: 20px" class="text-white fab fa-linkedin"></i>
+                        <i style="font-size: 20px; margin-left: 20px" class="text-white fab fa-twitter"></i>
                     </div>
-                    @endif
-
                 </div>
-                
+
+                @endif
                 
             </div>
         </div>
     </div>
-    <hr>
-    <div class="tiny-footer">
+
+    <style>
+        @media (max-width: 575.98px) { /* Extra Small (XS) */
+            .img-sm-hide { display: none !important; }
+            .social{
+                margin-top: 2rem !important;
+                margin-bottom: 1rem;
+            }
+        }
+
+        @media (min-width: 576px) { /* Small (SM) and above */
+            .img-lg-hide { display: none !important; }
+        }
+    </style>
+
+    <div style="margin-left: 20px;">
+        <img class="img-sm-hide" src="{{ asset('images/home/payment1.png') }}" alt="bkash">
+        <img class="img-lg-hide" src="{{ asset('images/home/small payment.png') }}" alt="bkash">
+    </div>
+
+    <hr class="m-0">
+    <div class="tiny-footer" style="background-color: #201448; height: 72px;">
         <div class="container-xl">
             <div class="row">
                 <div class="col-md-6">
                     <div class="logo-footer">
                         <ul>
-
-                            <li>{{ $gsetting->cpy_txt }}</li>
+                            <li>Copyright © 2023 <span class="fw-bold">KoreSearch</span> All Rights Reserved.</li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6" >
                     <div class="copyright-social">
                         <ul>
                            
